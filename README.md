@@ -70,7 +70,7 @@ To verify the setup:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE file](./LICENSE) for details.
+This project is licensed under the MIT License - see the [LICENSE file](https://github.com/0xmetaschool/ai-mock-interview/blob/main/LICENSE) for details.
 
 
 ## Contact
