@@ -8,7 +8,7 @@ The Full Stack AI Mock Interviewer app is a tool that lets users simulate mock i
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/0xmetaschool/AI_Mock_Interviewer.git
+git clone https://github.com/0xmetaschool/ai-mock-interview.git
 ```
 
 2. Navigate to the project directory:
