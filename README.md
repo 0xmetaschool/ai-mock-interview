@@ -20,7 +20,7 @@ An AI-powered simulator that offers personalized online interview experiences. I
 
 ## Live Demo
 
-<p><a href="https://final-ai-mock-interview.vercel.app/" target="_blank"> https://final-ai-mock-interview.vercel.app </a> </p>
+[https://final-ai-mock-interview.vercel.app](https://final-ai-mock-interview.vercel.app)
 
 ## Features
 - Secure access with social login or email/password authentication.
@@ -121,8 +121,7 @@ We love contributions! Here's how you can help make the AI-powered FinanceGuru e
 5. Open a Pull Request
 
 ## License
-<p>This project is licensed under the MIT License - see the <a href="https://github.com/0xmetaschool/ai-mock-interview/blob/main/LICENSE" target="_blank">LICENSE file</a> for details. <p>
-
+This project is licensed under the MIT License - see the [LICENSE file](https://github.com/0xmetaschool/ai-mock-interview/blob/main/LICENSE) for details.
 
 ## Acknowledgments
 
