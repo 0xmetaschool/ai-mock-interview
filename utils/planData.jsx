@@ -11,13 +11,13 @@ export default[
                 value:'✔️ Unlimited Retake Interview'
             },
             {
-                value:'❌ Practice Question'
+                value:'X Practice Question'
             },
             {
-                value:'❌ Metaschool.so Exlcusive App Access'
+                value:'X Metaschool.so Exlcusive App Access'
             },
             {
-                value:'❌ Email Support'
+                value:'X Email Support'
             },
         ]
     },

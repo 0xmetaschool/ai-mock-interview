@@ -74,3 +74,14 @@
       @apply bg-background text-foreground;
     }
   }
+
+  .footer {
+    height: 60px; /* Example height for the footer */
+    background-color: #f8f9fa; /* Footer background color */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10; /* Ensure it’s above other content */
+  }
