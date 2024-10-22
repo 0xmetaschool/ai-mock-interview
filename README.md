@@ -1,4 +1,4 @@
-## AI_Mock_Interviewer
+## MockInterviewerGPT
 
 An AI-powered simulator that offers personalized online interview experiences. It takes voice input and provides instant feedback to help you improve.
 
