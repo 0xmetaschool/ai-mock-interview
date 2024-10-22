@@ -20,7 +20,8 @@ An AI-powered simulator that offers personalized online interview experiences. I
 
 ## Live Demo
 
-[https://final-ai-mock-interview.vercel.app/](https://final-ai-mock-interview.vercel.app/)
+<a href="https://final-ai-mock-interview.vercel.app/" target="_blank">https://final-ai-mock-interview.vercel.app/</a>
+
 
 ## Features
 - Secure access with social login or email/password authentication.
