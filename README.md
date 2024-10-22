@@ -24,7 +24,7 @@ An AI-powered simulator that offers personalized online interview experiences. I
 
 ## Features
 - Secure access with social login or email/password authentication.
-- Generate AI-Powered interview questions based on the provided interview details.
+- Generate AI-powered interview questions based on the provided interview details.
 - Converts user responses into text, enabling seamless interaction.
 - Provides AI-driven analysis and feedback based on user interview responses.
 
@@ -38,14 +38,13 @@ An AI-powered simulator that offers personalized online interview experiences. I
 
 ## Getting Started
 
-
-**Prerequisites**
+### Prerequisites
 
 - Next.js
 - Clerk credentials
 - Gemini API Key
 
-**How to run the project**
+### How to run the project
 
 1. Clone the repository:
     ```bash
@@ -100,14 +99,13 @@ Open the browser and go to `http://localhost:3000`. Ensure that everything is lo
 </div>
 
 
-
 ## How to use the application
 
-1. Sign-in using Google, email or facebook account.
-2. Add a new interview and provide job role, description and years of experience.
+1. Sign in using Google, email, or Facebook account.
+2. Add a new interview and provide the job role, description, and years of experience.
 3. Respond to AI-generated questions and record them for the feedback.
-4. The AI will evaluate the answers and provide you a complete feedback.
-5. History of user interviews are saved on dashboard and a User can re-attempt the existing interviews from the dashboard as well.
+4. The AI will evaluate the answers and provide you with complete feedback.
+5. History of user interviews is saved on the dashboard and a User can re-attempt the existing interviews from the dashboard as well.
 
 
 ## Contributing
@@ -127,7 +125,7 @@ This project is licensed under the MIT License - see the [LICENSE file](https://
 
 - Google Gemini for providing the API
 - Clerk for authenticating the login process
-- Drizzle ORM for allowing to setup the database and stremline the process
+- Drizzle ORM for allowing to set the database and streamline the process
 
 ## Contact
 
