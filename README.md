@@ -122,7 +122,7 @@ We love contributions! Here's how you can help make the AI-powered FinanceGuru e
 5. Open a Pull Request
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE file](https://github.com/0xmetaschool/ai-mock-interview/blob/main/LICENSE) for details.
+This project is licensed under the MIT License - see the <a href="(https://github.com/0xmetaschool/ai-mock-interview/blob/main/LICENSE" target="_blank">LICENSE file/</a> for details.
 
 
 ## Acknowledgments
