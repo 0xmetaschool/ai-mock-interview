@@ -1,3 +1,4 @@
+// Setting up the Gemini modal
 const {
     GoogleGenerativeAI,
     HarmCategory,

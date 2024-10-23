@@ -1,9 +1,9 @@
+// Implementing the questions section on interview screen
 import { Lightbulb, Volume2 } from 'lucide-react'
 import React from 'react'
 
 function QuestionsSection({mockInterviewQuestion,activeQuestionIndex}) {
  
-    
     const textToSpeach=(text)=>{
         if('speechSynthesis' in window){
             const speech=new SpeechSynthesisUtterance(text);
@@ -13,6 +13,8 @@ function QuestionsSection({mockInterviewQuestion,activeQuestionIndex}) {
             alert('Sorry, Your browser does not support text to speech')
         }
     }
+
+    // Displaying interview questions
     return mockInterviewQuestion&&(
     <div className='p-5 border rounded-lg my-10'>
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
@@ -23,8 +25,11 @@ function QuestionsSection({mockInterviewQuestion,activeQuestionIndex}) {
             ))}
         </div>
         <h2 className='my-5 text-md md:text-lg'>{mockInterviewQuestion[activeQuestionIndex]?.question}</h2>
+
+        {/* <Adding a volume button to speak the AI generated question */}
         <Volume2 className='cursor-pointer' onClick={()=>textToSpeach(mockInterviewQuestion[activeQuestionIndex]?.question)} />
         
+        {/* Displaying an information note */}
         <div className='border rounded-lg p-5 bg-blue-100 mt-20 '>
             <h2 className='flex gap-2 items-center text-black'> 
                 <Lightbulb/>

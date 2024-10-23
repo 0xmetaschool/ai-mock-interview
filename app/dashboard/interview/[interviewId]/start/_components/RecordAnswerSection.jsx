@@ -1,3 +1,4 @@
+// Recording user responses on interview screen
 "use client"
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
@@ -54,10 +55,10 @@ function RecordAnswerSection({mockInterviewQuestion,activeQuestionIndex,intervie
           startSpeechToText();
         }
       }
-
+      
+      // Saving AI-generated question, AI-generated answer, user response, feedback, rating and user details to db  
       const UpdateUserAnswer=async()=>{
 
-        console.log(userAnswer)
         setLoading(true)
         const feedbackPrompt="Question:"+mockInterviewQuestion[activeQuestionIndex]?.question+
         ", User Answer:"+userAnswer+",Depends on question and user answer for give interview question "+
@@ -78,7 +79,8 @@ function RecordAnswerSection({mockInterviewQuestion,activeQuestionIndex,intervie
           userEmail:user?.primaryEmailAddress?.emailAddress,
           createdAt:moment().format('DD-MM-yyyy')
         })
-
+        
+        // Prompt on screen to indicate user response is recorded successfully
         if(resp)
         {
           toast('User Answer recorded successfully');
@@ -90,7 +92,7 @@ function RecordAnswerSection({mockInterviewQuestion,activeQuestionIndex,intervie
           setLoading(false);
       }
 
-
+  //  Setting up the webcam section
   return (
     <div className='flex items-center justify-center flex-col'>
         <div className='flex flex-col mt-20 justify-center items-center bg-black rounded-lg p-5'>

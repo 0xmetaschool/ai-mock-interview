@@ -1,3 +1,4 @@
+// Creating interview list to display previous attempted interviews on dashboard
 "use client"
 import { db } from '@/utils/db';
 import { MockInterview } from '@/utils/schema';
@@ -20,8 +21,6 @@ function InterviewList() {
         .from(MockInterview)
         .where(eq(MockInterview.createdBy,user?.primaryEmailAddress?.emailAddress))
         .orderBy(desc(MockInterview.id));
-
-        console.log(result);
         setInterviewList(result);
     }
 

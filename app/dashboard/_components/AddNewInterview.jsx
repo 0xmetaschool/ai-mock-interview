@@ -1,3 +1,4 @@
+// Popup screen to get the interview details
 "use client"
 import React, { useState } from 'react'
 import {
@@ -32,10 +33,11 @@ function AddNewInterview() {
     const onSubmit=async(e)=>{
         setLoading(true)
         e.preventDefault()
-        console.log(jobPosition,jobDesc,jobExperience);
-
+        
+        // Creating a prompt based upon the user's interview details
         const InputPrompt="Job position: "+jobPosition+", Job Description: "+jobDesc+", Years of Experience : "+jobExperience+" , Depends on Job Position, Job Description & Years of Experience give us "+process.env.NEXT_PUBLIC_INTERVIEW_QUESTION_COUNT+" Interview question along with Answer in JSON format, Give us question and answer field on JSON"
-
+        
+        //  Handling the API's response
         const result=await chatSession.sendMessage(InputPrompt);
         const MockJsonResp=(result.response.text()).replace('```json','').replace('```','')
         console.log(JSON.parse(MockJsonResp));
@@ -54,7 +56,7 @@ function AddNewInterview() {
             createdAt:moment().format('DD-MM-yyyy')
         }).returning({mockId:MockInterview.mockId});
 
-        console.log("Inserted ID:",resp)
+        
         if(resp)
         {
             setOpenDailog(false);
@@ -75,6 +77,7 @@ function AddNewInterview() {
          >
             <h2 className='text-lg text-center'>+ Add New</h2>
         </div>
+        {/* Dailog box to retreive user's interview details */}
         <Dialog open={openDailog}>
        
         <DialogContent className="max-w-2xl">

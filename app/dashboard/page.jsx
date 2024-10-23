@@ -1,3 +1,4 @@
+// Setting the main dashboard
 import { UserButton } from '@clerk/nextjs'
 import React from 'react'
 import AddNewInterview from './_components/AddNewInterview'
@@ -5,7 +6,8 @@ import InterviewList from './_components/InterviewList'
 
 function Dashboard() {
   return (
-    <div className='min-h-screen flex flex-col p-10'>
+    <div className="flex flex-col min-h-[calc(100vh-165px)] p-10">
+      {/* <div className="flex-grow"> */}
 
       <h2 className='font-bold text-3xl text-black'>Dashboard</h2>
       <h2 className='text-gray-500'>Create and Start your AI Mockup Interview</h2>
@@ -17,6 +19,7 @@ function Dashboard() {
       {/* Previous Interview List  */}
       <InterviewList/>
     </div>
+    // </div>
   )
 }
 

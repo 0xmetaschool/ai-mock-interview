@@ -1,3 +1,4 @@
+// Handling the start of a new interview
 "use client"
 import { db } from '@/utils/db';
 import { MockInterview } from '@/utils/schema';
@@ -25,7 +26,6 @@ function StartInterview({params}) {
         .where(eq(MockInterview.mockId,params.interviewId))
 
         const jsonMockResp=JSON.parse(result[0].jsonMockResp);
-        console.log(jsonMockResp)
         setMockInterviewQuestion(jsonMockResp);
         setInterviewData(result[0]);
     } 

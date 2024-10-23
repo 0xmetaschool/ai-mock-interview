@@ -1,3 +1,4 @@
+// Setting the dashboard layout
 import React from 'react'
 import Header from './_components/Header'
 

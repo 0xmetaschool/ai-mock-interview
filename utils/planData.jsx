@@ -1,3 +1,4 @@
+// Data to be displayed on Upgrade page
 export default[
     {
         id:1,
